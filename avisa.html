@@ -1,0 +1,215 @@
+	<html lang="es">
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBv2LS8Lqu53wYmtgxztWVBTEpLdMWIzHQ&sensor=false"></script>
+	<script type="text/javascript" src="./javascriptVisor/Mapea/Mapea.js"></script>
+	<script type="text/javascript">OpenLayers.Lang.setCode('es');</script>
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./javascript/colaboradores.js"></script>
+	<script type="text/javascript" src="./javascript/main.js"></script>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<link rel="stylesheet" href="base.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="SHORTCUT ICON" href="img/favicon.ico">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 menu_header">
+					<div><a href=""><span>Mapa de Entidades</span> <br> <span>Colaboradoras</span></div></a>
+					<div><span class="select menu" id_menu="mapa">Mapa</span></div>
+					<div><span class="menu" id_menu="project">Objetivo</span></div>
+					<input class="inputSearch" type="text">
+					<div class="imageClose"><img src="img/icon_search_close.png"></div>
+					<div class="imageSearch"><img src="img/icon_search.png"></div>
+					<a target="_blank" href="http://www.ceseand.net/"><img class="logoHeader" src="img/logo_cab.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mapa">
+		<div class="contentPopUp">
+			<div class="popup">
+				<h1 class="title"></h1>
+				<div class="closePopUp"><img src="img/icon_close_info.png"></div>
+				<div class="content">
+					<h3></h3>
+					<div class="clear"></div>
+					<div class="contact">
+						<p class="dir"></p>	
+						<p class="location"></p>
+						<p class="phone"></p>
+						<p class="email"><a href=""></a></p>
+					</div>
+					<p class="description"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="filtro"></div>
+	<div class="filtroOpen">
+		<div class="content">
+			<h1 class="closeLeyend">TIPO DE ENTIDAD COLABORADORA</h1>
+			<div class="mt25 mb50">
+				<div id_type="1" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Socios CESEAND</h2>
+				</div>
+				<div id_type="2" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Agentes Generadores de conocimiento</h2>
+				</div>
+				<div id_type="3" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Centros Tecnológicos y de Investigación</h2>
+				</div class="row">
+				<div id_type="4" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Cámaras de Comercio, Industria y Navegación</h2>
+				</div>
+				<div id_type="5" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Clusters</h2>
+				</div>
+				<div id_type="6" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Asociaciones empresariales / Federaciones</h2>
+				</div>
+				<div id_type="7" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Espacios Tecnológicos y de Conocimiento</h2>
+				</div>
+				<div id_type="8" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Redes</h2>
+				</div>
+				<div id_type="9" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Entidades de Gestión</h2>
+				</div>
+				<div id_type="10" class="row">
+					<div class="circle active"></div>
+					<h2 class="active">Otras entidades</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="search">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<p class="count">0 resultados</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="searchResult">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="project">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<h1>CESEAND<br><span>Centro de Servicios Europeos a Empresas Andaluzas</span></h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-md-8">
+					<p>
+						El Centro de Servicios Europeos a Empresas Andaluzas, CESEAND, nodo andaluz de la EnterpriseEurope Network, es un consorcio formado por cinco instituciones andaluzas:
+					</p>
+					<p>
+						• La Agencia de Innovación y Desarrollo de Andalucía, IDEA
+					</p>
+					<p>
+						• La Agencia Andaluza del Conocimiento, AAC
+					</p>
+					<p>
+						• El Instituto Andaluz de Tecnología, IAT
+					</p>
+					<p>
+						• La Confederación de Empresarios de Andalucía, CEA
+					</p>
+					<p>
+						• y el Consejo Andaluz de Cámaras, CÁMARAS
+					</p>
+					<p>
+						Desde inicios del año 2008, el objetivo de CESEAND es ayudar a las entidades andaluzas, fundamentalmente a las PYMES, a desarrollar su potencial de innovación, promover la cooperación empresarial, la internacionalización y la participación en programas europeos, así como mejorar su conocimiento de las políticas europeas.
+					</p>
+					<p style="font-weight:bold">
+						Enterprise Europe Network
+					</p>
+					<p>
+						La red Enterprise Europe Network [ <a href="http://een.ec.europa.eu/">http://een.ec.europa.eu</a> ] ayuda a las pequeñas y medianas empresas a explotar al máximo las oportunidades que brinda el mercado europeo, a través de los siguientes servicios:
+					</p>
+					<p>
+						Internacionalización: Desarrolle su negocio en nuevos mercados.
+					</p>
+					<p>
+						Transferencia de tecnología: Encuentre la tecnología que necesita para completar su negocio o encuentre socios que puedan utilizar las tecnologías que usted o su empresa han desarrollado.
+					</p>
+					<p>
+						Financiación y acceso a fondos: Conozca las vías de financiación europea que tiene a su disposición y reciba asistencia para obtener financiación, incluidos los fondos del Programa Marco Horizonte 2020.
+					</p>
+					<p>
+						Asesoramiento jurídico: Le orientaremos a través del laberinto legislativo de la Unión Europea para que vender sus productos o servicios en otro país le resulte más sencillo.
+					</p>
+					<p>
+						Servicios de información: Colaboramos estrechamente con expertos y organizaciones especializadas en propiedad intelectual y patentes para prestarle el mejor servicio de información.
+					</p>
+					<p>
+						La red Enterprise Europe Network agrupa a casi 600 organizaciones en más de 50 países dentro y fuera de la UE. Entre ellas se encuentran cámaras de comercio e industria, centros tecnológicos, universidades y agencias de desarrollo, entre otras.
+					</p>
+					<p style="font-weight:bold">
+						Únete a la Red CESEAND
+					</p>
+					<p>
+						Con el objetivo de reforzar la presencia de la Enterprise Europe Network en Andalucía y para llegar a un mayor número de entidades que se puedan beneficiar de los servicios de apoyo ofrecidos por la red, el consorcio CESEAND pretende reforzar y establecer nuevos vínculos con los agentes del Sistema Andaluz del Conocimiento, de manera que los servicios proporcionados por la Red sean consistentes y estén integrados dentro del ecosistema regional de servicios de apoyo a la innovación y al entorno empresarial.
+					</p>
+					<p>
+						Estos vínculos se materializan a través de la formalización de convenios de colaboración mediante los cuales se establece una estrategia de colaboración con el objetivo de explotar sinergias y complementariedades y desarrollar actividades conjuntas que beneficien al tejido industrial andaluz.
+					</p>
+					<p style="margin-top: 60px;">
+						Proyecto apoyado por
+					</p>
+				</div>
+
+				<div class="contact col-sm-3 col-md-3">
+					<h1>CESEAND<br><span>Centro de Servicios Europeos a Empresas Andaluzas</span></h1>
+					<p>Agencia Andaluza del Conocimiento<br>
+						C/ Max Planck 3, Edificio Iris 1<br>
+						CP 41092<br>
+						SEVILLA<br>
+					</p>
+					<p>955 00 74 76</p>
+					<p><a class="mail" href="mailto:een.aac@juntadeandalucia.es"><img src="img/icon_email.png"> een.aac@juntadeandalucia.es</a></p>
+					<p><a class="web" target="_blank" href="http://www.ceseand.net"><img src="img/icon_web.png"> www.ceseand.net</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="logos col-sm-12 col-md-12">
+					<div><a target="_blank" href="http://www.ceseand.net"><img class="" src="img/logo_ceseand_EEN.png"></a></div>
+					<div><a target="_blank" href="http://ec.europa.eu/"><img class="" src="img/logo_EuropeanC.png"></a></div>
+					<div><a target="_blank" href="http://www.juntadeandalucia.es/organismos/economiainnovacioncienciayempleo.html"><img class="" src="img/logo_AgenciaAC.png"></a></div>
+				</div>
+			</div>
+			<a target="_blank" href="http://www.geographica.gs/">
+				<div class="logo_by">
+					<img class="fleft mr" src="http://www.geographica.gs/application/views/img/GEO_W12_icon_bygeographica.png" alt="Logo Geographica mini">
+					<span class="fleft" title="Diseño + desarrollo">D+D</span>
+					<span class="fleft ml5" style="font-weight:500">Geographica</span> 
+				</div>
+			</a>
+		</div>
+	</div>
+
+</body>
+</html>
