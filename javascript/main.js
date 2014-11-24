@@ -189,7 +189,9 @@ $( document ).ready(function() {
     	buildField($(".popup .location"),description.municipio);
     	buildField($(".popup .phone"),description.telefono);
     	buildField($(".popup .email a"),description.mail);
-    	if(description.mail){
+        buildField($(".popup .url a"),description.web);
+    	
+        if(description.mail){
     		$(".popup .email a").attr("href","mailto:" + description.mail);
     		$(".popup .email a").show();
     		$(".popup .email").show();
@@ -197,6 +199,15 @@ $( document ).ready(function() {
     		$(".popup .email a").hide();
     		$(".popup .email").hide();
     	}
+
+        if(description.web){
+            $(".popup .url a").attr("href", description.web);
+            $(".popup .url a").show();
+            $(".popup .url").show();
+        }else{
+            $(".popup .url a").hide();
+            $(".popup .url").hide();
+        }
 
         $(".popup .content h3").html("<span>TIPO: </span>" + tipos[description.tipo]);
     }

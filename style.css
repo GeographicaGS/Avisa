@@ -262,6 +262,7 @@ a{
 
 #project .contact p{
 	font-size: 13px;
+
 }
 
 #project .contact p:first-child{
@@ -411,12 +412,19 @@ a{
 	margin-top: -13px;
 }
 
-.popup .content .contact .email a{
+.popup .content .contact .email,.url a{
 	color: #0a79be;
 }
 
 .popup .content .contact .email:before{
 	content: url(img/icon_email.png);
+	position: relative;
+	top: 3px;
+	margin-right: 10px;
+}
+
+.popup .content .contact .url:before{
+	content: url(img/icon_web.png);
 	position: relative;
 	top: 3px;
 	margin-right: 10px;
@@ -447,4 +455,10 @@ div.olControlZoom a{
 
 .logo_by img{
 	margin-top: 1px;
+}
+
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
